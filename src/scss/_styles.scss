@@ -1,0 +1,17 @@
+//Base
+@import "./base/variables";
+@import "./base/global";
+@import "./base/mixins";
+@import "./base/placeholders";
+
+//Layouts
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/slider";
+@import "./layouts/product";
+@import "./layouts/news";
+@import "./layouts/list";
+//Pages
+@import "./pages/home";
+@import "./pages/detail";
+@import "./pages/login";

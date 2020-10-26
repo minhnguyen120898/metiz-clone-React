@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  color: $color-primary;
+  font-size: $font-size-primary;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper{
+  min-width: 320px;
+  min-height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background: #0f1d2f;
+}
+
+.container-fluid{
+  padding: 0 !important;
+}

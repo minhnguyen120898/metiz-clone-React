@@ -1,0 +1,46 @@
+.listMovies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #0e1d2f;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &__title {
+        text-transform: uppercase;
+        font-size: 24px;
+        color : #0e1d2f;
+        margin-top: 35px;
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__item {
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+        width: 270px;
+        height: 374px;  
+        p {
+            margin : 0;
+        }
+    }
+    &__type {
+        text-transform: uppercase;
+    }
+    &__time,&__premiere {
+        text-transform: uppercase;
+    }
+    &__link {
+        margin : 0 auto;
+        width: 195px;
+        height: 281px;
+        img {
+            height: 281px;
+            width: 195px;
+        }    
+    }
+
+}

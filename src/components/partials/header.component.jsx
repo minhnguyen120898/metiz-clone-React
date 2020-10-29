@@ -1,7 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 function Header(props) {
+
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        return <Redirect to="/" />;
+    }
+
     return (
             <header className="header container-fluid wrapper">
                 <div className="container">
@@ -31,10 +37,17 @@ function Header(props) {
                                 <li><Link to="/">Khuyến mãi</Link></li>
                                 <li><Link to="/">Thành viên</Link></li>
                             </ul>
-                            <ul className="nav header__nav__right">
-                                <li><Link to="/Login">Đăng nhập</Link></li>
-                                <li><Link to="/">Đăng ký</Link></li>
-                            </ul>
+                            { !localStorage.getItem("token") ?
+                                (<ul className="nav header__nav__right"> 
+                                    <li><Link to="/Login">Đăng nhập</Link></li>
+                                    <li><Link to="/Register">Đăng ký</Link></li>
+                                </ul>) :
+                                (<ul className="nav header__nav__right">
+                                    <li><Link to="/">Cá nhân</Link></li>
+                                    <li><a href="" onClick={handleLogout}>Đăng xuất</a></li>
+                                </ul>)                              
+                            }                              
+                            
                             <div className="clearfix"></div>
                         </div>
                     </div>

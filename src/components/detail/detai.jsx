@@ -15,7 +15,7 @@ function Detail({match}) {
     useEffect(() => {
         const action = fetchProductDetail(productID);
         dispatch(action);
-    },[dispatch]);
+    },[dispatch,productID]);
 
     return (
         <div className="container">

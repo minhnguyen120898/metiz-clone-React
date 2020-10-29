@@ -1,4 +1,4 @@
-import { getProduct, getProductDetail } from "../../api/fetchProduct";
+import { getProduct, getProductDetail } from "../../api/productApi";
 
 export const fetchProducts = () => {
 

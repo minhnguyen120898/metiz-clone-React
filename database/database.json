@@ -1,150 +1,167 @@
 {
-    "sliders": [
-        {
-          "id": 1,
-          "image": "https://metiz.vn/media/slide_home/truoc_12h.jpg"
-        },
-        {
-          "id": 2,
-          "image": "https://metiz.vn/media/slide_home/980x448_11_.jpg"
-        },
-        {
-          "id": 3,
-          "image": "https://metiz.vn/media/slide_home/980wx448h_1_.jpg"
-        },
-        {
-          "id" : 4,
-          "image": "https://metiz.vn/media/slide_home/rolling_banner_1__1_1.jpg"
-        },
-        {
-            "id": 5,
-            "image":"https://metiz.vn/media/slide_home/tiectrangmau.jpg"
-        }
-    ],
-    "products": [
-        {
-          "id": 1,
-          "image": "https://metiz.vn/media/poster_film/118798458_153438096409823_4490167997726602995_o.jpg",
-          "name": "Ròm",
-          "ratings": 5,
-          "time": 120,
-          "producer": "",
-          "type": "Phiêu Lưu, Gia Đình, Xã Hội",
-          "actor": "Christian Berkel, Butz Ulrich Buse Director",
-          "releaseDate": "11/25/2020"
-        },
-        {
-          "id": 2,
-          "image": "https://metiz.vn/media/poster_film/rsz_the_doorman_-_payoff_poster_-_16102020.jpg",
-          "name": "Chiến binh hồi sinh",
-          "ratings": 5,
-          "time": 98,
-          "producer": "Rat Pack Filmproduktion",
-          "type": "Hành động",
-          "actor": "Christian Berkel, Butz Ulrich Buse Director",
-          "releaseDate": "10/10/2020"
-        },
-        {
-          "id": 3,
-          "image": "https://metiz.vn/media/poster_film/ti-hon-hau-dau-poster.jpg",
-          "name": "Tí hon hậu đậu",
-          "ratings": 5,
-          "time": 127,
-          "producer": "Rat Pack Filmproduktion",
-          "type": "Thần Thoại",
-          "actor": "Christian Berkel, Butz Ulrich Buse Director",
-          "releaseDate": "10/18/2020"
-        },
-        {
-          "id": 4,
-          "image": "https://metiz.vn/media/poster_film/LET-IT-SNOW-PAYOFF-POSTER-scaled.jpg",
-          "name": "Đồi tuyết máu",
-          "ratings": 5,
-          "time": 97,
-          "producer": "Rat Pack Filmproduktion",
-          "type": "Hành Động",
-          "actor": "Christian Berkel, Butz Ulrich Buse Director",
-          "releaseDate": "10/10/2020"
-        },
-        {
-          "id": 5,
-          "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-          "name": "Xứ sở phép thuật",
-          "ratings": 5,
-          "time": 97,
-          "producer": "Rat Pack Filmproduktion",
-          "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
-          "actor": "Christian Berkel, Butz Ulrich Buse Director",
-          "releaseDate": "11/18/2020"
-        },
-        {
-          "id": 6,
-          "image": "https://metiz.vn/media/poster_film/unnamed-15882426986801405021247-crop-15882427260391238301165.jpg",
-          "name": "Tiệc trăng máu",
-          "ratings": 5,
-          "time": 120,
-          "producer": "",
-          "type": "Hài, kịch",
-          "actor": "Trung Ruồi,Nhã Phương",
-          "releaseDate": "12/21/2020"
-        },
-        {
-          "id": 7,
-          "image": "https://metiz.vn/media/poster_film/af_-_poster_1_.jpg",
-          "name": "Tay đấm mỹ",
-          "ratings": 5,
-          "time": 120,
-          "producer": "Rat Pack Filmproduktion",
-          "type": "Hành động",
-          "actor": "Rat Pack Filmproduktion",
-          "releaseDate": "10/21/2020"
-        },
-        {
-          "id": 8,
-          "image": "https://metiz.vn/media/poster_film/rsz_sputnik_-_vietnamese_poster_final_2.jpg",
-          "name": "Quái vật săn đêm",
-          "ratings": 5,
-          "time": 120,
-          "producer": "Rat Pack Filmproduktion",
-          "type": "Hành động, khoa học",
-          "actor": "Rat Pack Filmproduktion",
-          "releaseDate": "10/19/2020"
-        },
-        {
-          "id": 9,
-          "image": "https://metiz.vn/media/poster_film/rsz_sputnik_-_vietnamese_poster_final_2.jpg",
-          "name": "Quái vật săn đêm",
-          "ratings": 5,
-          "time": 120,
-          "producer": "Rat Pack Filmproduktion",
-          "type": "Hành động, khoa học",
-          "actor": "Rat Pack Filmproduktion",
-          "releaseDate": "11/19/2020"
-        }
-    ],
-    "news" : [
-      {
-        "id": 1,
-        "image" : "https://metiz.vn/media/new_offer/NOEL_METIZ_2019_GIANG_SINH_AM_AP_WEB-01.jpg"
-      },
-      {
-        "id": 2,
-        "image" : "https://metiz.vn/media/new_offer/HALLOWEEN_2019_WEB-01.jpg"
-      },
-      {
-        "id": 3,
-        "image" : "https://metiz.vn/media/new_offer/20.10.2019_WEB-01.jpg"
-      },
-      {
-        "id": 4,
-        "image" : "https://metiz.vn/media/new_offer/METIZ_TRUNG_THU_2019_WEB-01.jpg"
-      },
-      {
-        "id": 5,
-        "image" : "https://metiz.vn/media/new_offer/KM_SUPER__MONDAY_MEDIA-02.jpg"
-      }
-    ],
-    "users": [
-      {}
-    ]
+  "sliders": [
+    {
+      "id": 1,
+      "image": "https://metiz.vn/media/slide_home/truoc_12h.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://metiz.vn/media/slide_home/980x448_11_.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://metiz.vn/media/slide_home/980wx448h_1_.jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://metiz.vn/media/slide_home/rolling_banner_1__1_1.jpg"
+    },
+    {
+      "id": 5,
+      "image": "https://metiz.vn/media/slide_home/tiectrangmau.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "https://metiz.vn/media/poster_film/118798458_153438096409823_4490167997726602995_o.jpg",
+      "name": "Ròm",
+      "ratings": 5,
+      "time": 120,
+      "producer": "",
+      "type": "Phiêu Lưu, Gia Đình, Xã Hội",
+      "actor": "Christian Berkel, Butz Ulrich Buse Director",
+      "releaseDate": "11/25/2020"
+    },
+    {
+      "id": 2,
+      "image": "https://metiz.vn/media/poster_film/rsz_the_doorman_-_payoff_poster_-_16102020.jpg",
+      "name": "Chiến binh hồi sinh",
+      "ratings": 5,
+      "time": 98,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Hành động",
+      "actor": "Christian Berkel, Butz Ulrich Buse Director",
+      "releaseDate": "10/10/2020"
+    },
+    {
+      "id": 3,
+      "image": "https://metiz.vn/media/poster_film/ti-hon-hau-dau-poster.jpg",
+      "name": "Tí hon hậu đậu",
+      "ratings": 5,
+      "time": 127,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Thần Thoại",
+      "actor": "Christian Berkel, Butz Ulrich Buse Director",
+      "releaseDate": "10/18/2020"
+    },
+    {
+      "id": 4,
+      "image": "https://metiz.vn/media/poster_film/LET-IT-SNOW-PAYOFF-POSTER-scaled.jpg",
+      "name": "Đồi tuyết máu",
+      "ratings": 5,
+      "time": 97,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Hành Động",
+      "actor": "Christian Berkel, Butz Ulrich Buse Director",
+      "releaseDate": "10/10/2020"
+    },
+    {
+      "id": 5,
+      "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
+      "name": "Xứ sở phép thuật",
+      "ratings": 5,
+      "time": 97,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
+      "actor": "Christian Berkel, Butz Ulrich Buse Director",
+      "releaseDate": "11/18/2020"
+    },
+    {
+      "id": 6,
+      "image": "https://metiz.vn/media/poster_film/unnamed-15882426986801405021247-crop-15882427260391238301165.jpg",
+      "name": "Tiệc trăng máu",
+      "ratings": 5,
+      "time": 120,
+      "producer": "",
+      "type": "Hài, kịch",
+      "actor": "Trung Ruồi,Nhã Phương",
+      "releaseDate": "12/21/2020"
+    },
+    {
+      "id": 7,
+      "image": "https://metiz.vn/media/poster_film/af_-_poster_1_.jpg",
+      "name": "Tay đấm mỹ",
+      "ratings": 5,
+      "time": 120,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Hành động",
+      "actor": "Rat Pack Filmproduktion",
+      "releaseDate": "10/21/2020"
+    },
+    {
+      "id": 8,
+      "image": "https://metiz.vn/media/poster_film/rsz_sputnik_-_vietnamese_poster_final_2.jpg",
+      "name": "Quái vật săn đêm",
+      "ratings": 5,
+      "time": 120,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Hành động, khoa học",
+      "actor": "Rat Pack Filmproduktion",
+      "releaseDate": "10/19/2020"
+    },
+    {
+      "id": 9,
+      "image": "https://metiz.vn/media/poster_film/rsz_sputnik_-_vietnamese_poster_final_2.jpg",
+      "name": "Quái vật săn đêm",
+      "ratings": 5,
+      "time": 120,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Hành động, khoa học",
+      "actor": "Rat Pack Filmproduktion",
+      "releaseDate": "11/19/2020"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "image": "https://metiz.vn/media/new_offer/NOEL_METIZ_2019_GIANG_SINH_AM_AP_WEB-01.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://metiz.vn/media/new_offer/HALLOWEEN_2019_WEB-01.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://metiz.vn/media/new_offer/20.10.2019_WEB-01.jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://metiz.vn/media/new_offer/METIZ_TRUNG_THU_2019_WEB-01.jpg"
+    },
+    {
+      "id": 5,
+      "image": "https://metiz.vn/media/new_offer/KM_SUPER__MONDAY_MEDIA-02.jpg"
+    }
+  ],
+  "users": [
+    {
+      "name": "123",
+      "email": "123@1",
+      "phone": "123",
+      "address": "123",
+      "gender": "",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "minh",
+      "email": "1@gmail",
+      "phone": "123",
+      "address": "123",
+      "gender": "",
+      "password": "123",
+      "id": 2
+    }
+  ]
 }

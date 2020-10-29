@@ -5,6 +5,7 @@ import ListComing from "./components/pages/listComing.component";
 import NotFound from "./components/pages/notFound.component";
 import Detail from './components/pages/detail.component';
 import Login from './components/pages/login.component';
+import Register from './components/pages/register.component';
 
 const routers = [
     {
@@ -31,6 +32,11 @@ const routers = [
         path: '/login',
         exact: true,
         main : () => <Login />
+    },
+    {
+        path: '/register',
+        exact: true,
+        main : () => <Register />
     },
     {
         path: '/*',

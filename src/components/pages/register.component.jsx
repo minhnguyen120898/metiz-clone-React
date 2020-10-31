@@ -1,17 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {  useHistory } from 'react-router';
+import Alert from 'react-bootstrap/Alert';
 import { getUser, postUserRegister } from '../../api/authApi';
 import { getAddress, getEmail, getGender, getPhone,getPassword, getName, getAll } from '../../redux/actions/registerAction';
 import Footer from '../partials/footer.component';
 import Header from '../partials/header.component';
 
+
 function Register() {
 
     const { email , name , phone , password, address, gender} = useSelector(state => state.register);
+
     const dispatch = useDispatch();
     const history = useHistory();
-    
+    const [showAlert,setShowAlert] = useState(false);
+
     useEffect(() => {
         const emptyUser = {
             name : "",
@@ -32,7 +36,7 @@ function Register() {
             phone,
             address,
             gender,
-            password,
+            password : btoa(password),
         }
         let res = await getUser(email);
         if(res.data.length) {
@@ -40,13 +44,21 @@ function Register() {
         }else {
             let resp = await postUserRegister(newUser);
             console.log(resp);
-            history.push("/login");
+            localStorage.setItem("token", JSON.stringify(resp.data));
+            setShowAlert(true);
+            setTimeout(function(){
+                history.push("/login");
+            },1000);
         }    
     }
     return (
         <div>
             <Header />
             <div className="register">
+                <Alert show={showAlert} variant="success">
+                    <p>Đăng ký thành công!</p>
+                    <button onClick={() => setShowAlert(false)}>Đóng</button>
+                </Alert>
                 <p className="register__title">Đăng ký</p>
                 <form onSubmit={ onSubmit }>
                     <div className="row">
@@ -66,6 +78,7 @@ function Register() {
                                 value={gender}
                                 onChange={(e) => dispatch(getGender(e.target.value))}
                                 >
+                                <option value="" disabled>Chọn giới tính</option>
                                 <option value="male">Nam</option>
                                 <option value="female">Nữ</option>
                             </select>
@@ -97,15 +110,6 @@ function Register() {
                                 placeholder="Nhập mật khẩu ở đây" 
                                 required/>
                         </div>
-                        {/* <div className="col-12 col-md-6">
-                            <label htmlFor="">Xác Nhận Mật Khẩu:</label>
-                            <input 
-                                type="password"                                
-                                value= { password } 
-                                onChange={ (e) => dispatch(getPassword(e.target.value)) }
-                                placeholder="Nhập lại mật khẩu" 
-                                required/>
-                        </div> */}
                         <div className="col-12 col-md-6">
                             <label>Địa chỉ:</label>
                             <input 

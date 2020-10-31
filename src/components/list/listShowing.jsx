@@ -1,19 +1,46 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkShowingProduct } from '../../common/filterProducts';
-import { fetchProducts } from '../../redux/actions/productAction';
+import { fetchProducts, getSearch } from '../../redux/actions/productAction';
 
 function ShowingMovies(props) {
 
-    const { products, loading, error } = useSelector(state => state.product);
+    const { products, loading, error, searchValue } = useSelector(state => state.product);
     const dispatch = useDispatch();
+    const typingTimeOutRef = useRef();
+
     useEffect(() => {
-       dispatch(fetchProducts());
-    },[dispatch]);
+       dispatch(fetchProducts(searchValue));
+    },[dispatch,searchValue]);
+  
+    const onChange = (value) => {
+
+        const action = getSearch(value);
+        
+        if(typingTimeOutRef.current){
+            clearTimeout(typingTimeOutRef.current);
+        }
+
+        typingTimeOutRef.current = setTimeout(() => {
+            console.log(action);
+            dispatch(action);
+        },300); 
+        
+    };
 
     return (
         <div className="container">
-            <h1 className="listMovies__title">Phim đang chiếu</h1>
+            <div className="listMovies__top">
+                <h1 className="listMovies__title">Phim đang chiếu</h1>
+                <div className="listMovies__search">
+                    <label htmlFor="">Tìm Kiếm:</label>
+                    <input
+                        placeholder="Tìm kiếm phim ở đây"
+                        value= {searchValue }
+                        onChange={(value) => onChange(value.target.value)}
+                    />
+                </div>
+            </div>
             <div className="listMovies">            
                 {loading ? (
                 <p>Loading...</p>

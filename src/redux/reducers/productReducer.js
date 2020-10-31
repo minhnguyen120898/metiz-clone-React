@@ -5,6 +5,7 @@ const initialState = {
     loading: false,
     filter: [],
     productDetail : [],
+    searchValue : ""
 };
 
 const productReducer = (state = initialState, action) => {
@@ -32,6 +33,12 @@ const productReducer = (state = initialState, action) => {
             return {
                 ...state,
                 productDetail : action.dataProduct,
+            }
+        }
+        case 'GET_SEARCH' : {
+            return {
+                ...state,
+                searchValue : action.searchValue
             }
         }
         default: 

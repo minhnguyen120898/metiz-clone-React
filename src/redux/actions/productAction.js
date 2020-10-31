@@ -1,10 +1,10 @@
 import { getProduct, getProductDetail } from "../../api/productApi";
 
-export const fetchProducts = () => {
+export const fetchProducts = (valueSearch) => {
 
     return async (dispatch) => {
         try {
-            const res = await getProduct();
+            const res = await getProduct(valueSearch);
             dispatch(setProduct(res.data));
         } catch (error) {
             fetchProductFailled(error);
@@ -57,5 +57,12 @@ export const showingProduct = (product) => {
     return {
         type: "SHOWING_PRODUCTS",
         product,
+    }
+}
+
+export const getSearch = (searchValue) => {
+    return {
+        type: "GET_SEARCH",
+        searchValue,
     }
 }

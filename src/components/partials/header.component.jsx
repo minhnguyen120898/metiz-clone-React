@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
-function Header(props) {
+function Header() {
 
     const handleLogout = () => {
         localStorage.removeItem("token");
@@ -39,12 +39,12 @@ function Header(props) {
                             </ul>
                             { !localStorage.getItem("token") ?
                                 (<ul className="nav header__nav__right"> 
-                                    <li><Link to="/Login">Đăng nhập</Link></li>
-                                    <li><Link to="/Register">Đăng ký</Link></li>
+                                    <li><Link to="/login">Đăng nhập</Link></li>
+                                    <li><Link to="/register">Đăng ký</Link></li>
                                 </ul>) :
                                 (<ul className="nav header__nav__right">
-                                    <li><Link to="/">Cá nhân</Link></li>
-                                    <li><a href="" onClick={handleLogout}>Đăng xuất</a></li>
+                                    <li><Link to="/profile">Cá nhân</Link></li>
+                                    <li><a href="/" onClick={handleLogout}>Đăng xuất</a></li>
                                 </ul>)                              
                             }                              
                             

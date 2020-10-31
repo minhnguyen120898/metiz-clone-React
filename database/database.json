@@ -113,13 +113,46 @@
     {
       "id": 9,
       "image": "https://metiz.vn/media/poster_film/rsz_sputnik_-_vietnamese_poster_final_2.jpg",
-      "name": "Quái vật săn đêm",
+      "name": "Quái vật săn đêm 2",
       "ratings": 5,
       "time": 120,
       "producer": "Rat Pack Filmproduktion",
       "type": "Hành động, khoa học",
       "actor": "Rat Pack Filmproduktion",
       "releaseDate": "11/19/2020"
+    },
+    {
+      "id": 10,
+      "image": "https://metiz.vn/media/poster_film/Phim_hay_th%C3%A1ng_10_The_Craft-_Legacy_Ph%C3%B9_Th%E1%BB%A7y_H%E1%BB%8Dc_%C4%90%C6%B0%E1%BB%9Dng-dsvh-doisongvanhoa-.jpg",
+      "name": "Phù Thủy, Phù Thủy",
+      "ratings": 5,
+      "time": 120,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Kinh dị",
+      "actor": "Rat Pack Filmproduktion",
+      "releaseDate": "10/19/2020"
+    },
+    {
+      "id": 11,
+      "image": "https://metiz.vn/media/poster_film/rsz_poster__nq_4.jpg",
+      "name": "Ngạc Quỷ",
+      "ratings": 5,
+      "time": 120,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Kinh dị",
+      "actor": "Rat Pack Filmproduktion",
+      "releaseDate": "10/26/2020"
+    },
+    {
+      "id": 12,
+      "image": "https://metiz.vn/media/poster_film/media_images_2020_10_06_the-golden-holiday-intl-poster-fin-091043-061020-16.jpg",
+      "name": "Chuyến Đi Nhớ Đời",
+      "ratings": 5,
+      "time": 120,
+      "producer": "Rat Pack Filmproduktion",
+      "type": "Hài Hước",
+      "actor": "Rat Pack Filmproduktion",
+      "releaseDate": "11/26/2020"
     }
   ],
   "news": [
@@ -146,22 +179,175 @@
   ],
   "users": [
     {
-      "name": "123",
-      "email": "123@1",
-      "phone": "123",
-      "address": "123",
-      "gender": "",
-      "password": "123",
+      "name": "minh",
+      "email": "minh@1",
+      "phone": "232",
+      "address": "11111111",
+      "gender": "male",
+      "password": "bWluaHBybw==",
       "id": 1
+    }
+  ],
+  "cinemas": [
+    {
+      "id": 1,
+      "name": "Metiz Cinema - Helio Center",
+      "session": [
+        {
+          "id": 1,
+          "time": "14:00"
+        },
+        {
+          "id": 2,
+          "time": "16:00"
+        },
+        {
+          "id": 3,
+          "time": "20:00"
+        }
+      ],
+      "seats": [
+        {
+          "id": 1,
+          "codeSeat": "A01",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 2,
+          "codeSeat": "A02",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 3,
+          "codeSeat": "A03",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 4,
+          "codeSeat": "A04",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 5,
+          "codeSeat": "A05",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 6,
+          "codeSeat": "A06",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 7,
+          "codeSeat": "A07",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 8,
+          "codeSeat": "A08",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 9,
+          "codeSeat": "A09",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "id": 10,
+          "codeSeat": "A10",
+          "price": 75000,
+          "status": false
+        }
+      ]
     },
     {
-      "name": "minh",
-      "email": "1@gmail",
-      "phone": "123",
-      "address": "123",
-      "gender": "",
-      "password": "123",
-      "id": 2
+      "id": 2,
+      "name": "Metiz Cinema - F HOME ",
+      "session": [
+        {
+          "id": 1,
+          "time": "10:00"
+        },
+        {
+          "id": 2,
+          "time": "15:00"
+        },
+        {
+          "id": 3,
+          "time": "19:00"
+        }
+      ],
+      "seats": [
+        {
+          "codeSeat": "A01",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A02",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A03",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A04",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A05",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A06",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A07",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A08",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A09",
+          "price": 75000,
+          "status": false
+        },
+        {
+          "codeSeat": "A10",
+          "price": 75000,
+          "status": false
+        }
+      ]
+    }
+  ],
+  "payment": [
+    {
+      "id": 1,
+      "name": "ATM"
+    },
+    {
+      "id": 2,
+      "name": "Cash"
     }
   ]
 }

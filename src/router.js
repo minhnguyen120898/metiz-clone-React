@@ -6,6 +6,8 @@ import NotFound from "./components/pages/notFound.component";
 import Detail from './components/pages/detail.component';
 import Login from './components/pages/login.component';
 import Register from './components/pages/register.component';
+import Profile from './components/pages/profile.component';
+import ChangePassword from './components/profile/changePassword';
 
 const routers = [
     {
@@ -37,6 +39,16 @@ const routers = [
         path: '/register',
         exact: true,
         main : () => <Register />
+    },
+    {
+        path: '/profile',
+        exact: true,
+        main : () => <Profile />
+    },
+    {
+        path: '/changepassword',
+        exact: true,
+        main : () => <ChangePassword />
     },
     {
         path: '/*',

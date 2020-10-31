@@ -1,8 +1,11 @@
 import instanceAxios from "./instanceAxios";
 
-export const getProduct = () => {
-    const url = `/products`;
+export const getProduct = (valueSearch) => {
+    
+    let URLparams = "";
+    URLparams+= (valueSearch ? (`&name_like=${valueSearch}`) : ""); 
 
+    const url = `/products?${URLparams}`;
     return instanceAxios.get(url);
 }
 

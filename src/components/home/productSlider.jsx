@@ -32,7 +32,7 @@ function ProductSlider() {
     const settings = {
       dots: false,
       infinite: true,
-      speed: 500,
+      speed: 300,
       autoplay: true,
       slidesToShow: 4,
       slidesToScroll: 1

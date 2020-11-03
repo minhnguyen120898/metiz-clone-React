@@ -1,4 +1,6 @@
 import {combineReducers} from 'redux';
+import moviesReducer from './reducers/adminMovieReducer';
+import adminReducer from './reducers/adminUserReducer';
 import loginReducer from './reducers/loginReducer';
 import newsReducer from './reducers/newsReducer';
 import productReducer from './reducers/productReducer';
@@ -11,6 +13,8 @@ const rootReducer = combineReducers({
     news : newsReducer,
     login : loginReducer,
     register : registerReducer,
+    admin : adminReducer,
+    adminMovie : moviesReducer,
 })
 
 export default rootReducer;

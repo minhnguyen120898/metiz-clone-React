@@ -16,15 +16,20 @@ function Login() {
         event.preventDefault();
         
         let res = await getUser(email);
-console.log(res);
+        console.log(res);
         if(res.data.length) {
             const decode = atob(res.data[0].password);
             if(decode === password) {
                 localStorage.setItem("token",JSON.stringify({
                         ...res.data[0],
                 }));                
-                history.push("/");
-                alert("Đăng nhập thành công!");
+                if(res.data[0].email === "minhnguyen120898@gmail.com") {
+                    history.push("/admin/users");
+                    alert("Đăng nhập thành công!");
+                }else{
+                    history.push("/");
+                    alert("Đăng nhập thành công!");
+                }
             }else {
                 alert("Mật khẩu không đúng! Vui lòng nhập lại")
             }

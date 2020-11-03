@@ -33,7 +33,13 @@ function Header() {
                                         <Link to="/coming">Phim sắp chiếu</Link>
                                     </div>
                                 </li>
-                                <li><Link to="/">Rạp</Link></li>
+                                <li className="header__dropdown">
+                                    <p>Rạp</p>
+                                    <div className="header__dropdown-menu">
+                                        <Link to="/">Metiz Helio</Link>
+                                        <Link to="/">Metiz BIGC</Link>
+                                    </div>
+                                </li>
                                 <li><Link to="/">Khuyến mãi</Link></li>
                                 <li><Link to="/">Thành viên</Link></li>
                             </ul>

@@ -28,7 +28,7 @@
       "name": "Ròm",
       "ratings": 5,
       "time": 120,
-      "producer": "",
+      "producer": "Ngọc Minh",
       "type": "Phiêu Lưu, Gia Đình, Xã Hội",
       "actor": "Christian Berkel, Butz Ulrich Buse Director",
       "releaseDate": "11/25/2020"
@@ -179,13 +179,22 @@
   ],
   "users": [
     {
-      "name": "minh",
-      "email": "minh@1",
-      "phone": "232",
-      "address": "11111111",
+      "name": "Nguyen Ngoc Minh",
+      "email": "minhnguyen120898@gmail.com",
+      "phone": "0935204903",
+      "address": "Quang Nam",
       "gender": "male",
-      "password": "bWluaHBybw==",
-      "id": 1
+      "password": "MTIz",
+      "id": 2
+    },
+    {
+      "name": "minh 2light",
+      "email": "minh@12",
+      "phone": "123",
+      "address": "minh",
+      "gender": "male",
+      "password": "Mg==",
+      "id": 4
     }
   ],
   "cinemas": [
@@ -271,7 +280,7 @@
     },
     {
       "id": 2,
-      "name": "Metiz Cinema - F HOME ",
+      "name": "Metiz Cinema - BIGC ",
       "session": [
         {
           "id": 1,
